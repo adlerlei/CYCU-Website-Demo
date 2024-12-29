@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <title>Open Integrated Curriculum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+
+</head>
+
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    Open Integrated Curriculum
+                </a>
+
+                <!-- 漢堡選單按鈕 -->
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <!-- 導航選單 -->
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                        HOME
+                    </a>
+                    <a class="navbar-item" href="about.html">
+                        ABOUT
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <!-- 數學 -->
+                <div class="column is-one-third">
+                    <div class="subject-card math-card" data-target="math-modal">
+                        <div class="card-content">
+                            <img src="images/1.png" alt="Mathematics" class="subject-image">
+                            <h3 class="card-title">Mathematics</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="math-modal" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <h2 class="title">Mathematics</h2>
+                            <div class="content">
+                                <h3>Calculus</h3>
+                                <p>Calculus is the study of change, primarily encompassing two branches:</p>
+                                <ul>
+                                    <li><b>Differential Calculus</b>: Examines instantaneous rates of change and slopes
+                                        of curves.</li>
+                                    <li><b>Integral Calculus</b>: Investigates accumulation and areas under curves.</li>
+                                </ul>
+                                <p>Calculus is fundamental to numerous fields in science and engineering, including
+                                    physics, engineering, economics, and computer science.</p>
+                                <h3>Linear Algebra</h3>
+                                <p>Linear algebra is the branch of mathematics concerning vectors, vector spaces,
+                                    systems of linear equations, and linear transformations. It finds widespread
+                                    applications in computer graphics, data analysis, machine learning, and physics.</p>
+                                <h3>Probability and Statistics</h3>
+                                <p>Probability theory studies random events, examining the likelihood of their
+                                    occurrence. Statistics involves the collection, analysis, interpretation,
+                                    presentation, and organization of data. Probability and statistics play vital roles
+                                    in various fields, such as business, medicine, social sciences, and engineering.</p>
+                                <h3>Differential Equations</h3>
+                                <p>Differential equations are mathematical expressions involving an unknown function and
+                                    its derivatives. They describe the rates of change and relationships between
+                                    functions. These equations are widely used in physics, engineering, biology, and
+                                    economics to model phenomena like motion, fluid flow, population growth, and disease
+                                    spread.</p>
+                                <h3>Real Analysis</h3>
+                                <p>Real analysis is a branch of mathematics that studies real numbers and their
+                                    functions. It explores properties of real numbers, convergence of sequences and
+                                    series, and continuity and differentiability of functions. Real analysis provides a
+                                    rigorous foundation for calculus and finds applications in other mathematical fields
+                                    like numerical analysis and complex analysis.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+                <!-- 化學 -->
+                <div class="column is-one-third">
+                    <div class="subject-card chemistry-card" data-target="chemistry-modal">
+                        <div class="card-content">
+                            <img src="images/2.png" alt="Chemistry" class="subject-image">
+                            <h3 class="card-title">Chemistry</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="chemistry-modal" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <h2 class="title is-2">Chemistry</h2>
+                            <div class="content">
+                                <h3 class="is-4">Course Topics</h3>
+                                <h3>Organic Chemistry</h3>
+                                <p>Organic chemistry is the study of organic compounds, which are compounds that contain
+                                    carbon. Organic chemistry is important in many different fields, such as medicine,
+                                    agriculture, and materials science.</p>
+                                <h3>Inorganic Chemistry</h3>
+                                <p>Inorganic chemistry is the study of inorganic compounds, which are compounds that do
+                                    not contain carbon. Inorganic chemistry is important in many different fields, such
+                                    as mining, metallurgy, and catalysis.</p>
+                                <h3>Physical Chemistry</h3>
+                                <p>Physical chemistry is the study of the physical properties and behavior of chemical
+                                    systems. Physical chemistry is important in many different fields, such as chemical
+                                    engineering, materials science, and nanotechnology.</p>
+                                <h3>Analytical Chemistry</h3>
+                                <p>Analytical chemistry is the study of the identification and quantification of the
+                                    chemical components of matter. Analytical chemistry is important in many different
+                                    fields, such as environmental science, forensics, and food science.</p>
+                                <h3>Biochemistry</h3>
+                                <p>Biochemistry is the study of the chemical processes that occur within living
+                                    organisms. Biochemistry is important in many different fields, such as medicine,
+                                    agriculture, and biotechnology.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+
+                <!-- 物理 -->
+                <div class="column is-one-third">
+                    <div class="subject-card physics-card" data-target="physics-modal">
+                        <div class="card-content">
+                            <img src="images/3.png" alt="Physics" class="subject-image">
+                            <h3 class="card-title">Physics</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="physics-modal" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <h2 class="title is-2">Physics</h2>
+                            <div class="content">
+                                <h3 class="is-4">Course Topics</h3>
+                                <h3>Mechanics</h3>
+                                <p>Mechanics is the branch of physics that studies the motion of objects and the forces
+                                    that cause them to move. Mechanics is important in many different fields, such as
+                                    engineering, aerospace, and civil engineering.</p>
+                                <h3>Electromagnetism</h3>
+                                <p>Electromagnetism is the branch of physics that studies the interaction of electricity
+                                    and magnetism. Electromagnetism is important in many different fields, such as
+                                    electrical engineering, electronics, and communications.</p>
+                                <h3>Thermodynamics</h3>
+                                <p>Thermodynamics is the branch of physics that studies the conversion of heat and work.
+                                    Thermodynamics is important in many different fields, such as mechanical
+                                    engineering, chemical engineering, and energy.</p>
+                                <h3>Quantum Physics</h3>
+                                <p>Quantum physics is the branch of physics that studies the behavior of matter and
+                                    energy at the microscopic level. Quantum physics is important in many different
+                                    fields, such as materials science, nanotechnology, and quantum computing.</p>
+                                <h3>Optics</h3>
+                                <p>Optics is the branch of physics that studies the behavior and properties of light.
+                                    Optics is important in many different fields, such as optical engineering, medical
+                                    imaging, and communications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+
+                <!-- 生物 -->
+                <div class="column is-one-third">
+                    <div class="subject-card biology-card" data-target="biology-modal">
+                        <div class="card-content">
+                            <img src="images/4.png" alt="Biology" class="subject-image">
+                            <h3 class="card-title">Biology</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="biology-modal" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <h2 class="title is-2">Biology</h2>
+                            <div class="content">
+                                <h3 class="is-4">Course Topics</h3>
+                                <h3>Cell Biology</h3>
+                                <p>Cell biology is the study of cells, the fundamental building blocks of life. It
+                                    explores the structure and function of cells, including their components,
+                                    organelles, growth, development, and interactions. Cell biology is a cornerstone of
+                                    biology and is essential for understanding the basic processes of life.</p>
+                                <h3>Genetics</h3>
+                                <p>Genetics is the study of genes, heredity, and variation in living organisms. It
+                                    explores the structure and function of genes, the laws of inheritance, genetic
+                                    mutations and recombination, and the expression and regulation of genes. Genetics is
+                                    a vital branch of biology and is crucial for understanding the processes of
+                                    inheritance and evolution.</p>
+                                <h3>Ecology</h3>
+                                <p>Ecology is the study of the interactions between organisms and their environment. It
+                                    explores the flow of energy and matter in ecosystems, the structure and function of
+                                    biological communities, and the stability and evolution of ecosystems. Ecology is a
+                                    crucial branch of biology and is essential for understanding the interactions
+                                    between organisms and their environment and for conserving biodiversity.</p>
+                                <h3>Evolution</h3>
+                                <p>Evolution is the study of changes in living organisms over time. It explores the
+                                    origin of life, the formation of biodiversity, the adaptive evolution of organisms,
+                                    and the formation and extinction of species. Evolution is a central concept in
+                                    biology and is crucial for understanding the history and diversity of life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+
+                <!-- 歷史 -->
+                <div class="column is-one-third">
+                    <div class="subject-card history-card" data-target="history-modal">
+                        <div class="card-content">
+                            <img src="images/5.png" alt="History" class="subject-image">
+                            <h3 class="card-title">History</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="history-modal" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <h2 class="title is-2">History</h2>
+                            <div class="content">
+                                <h3 class="is-4">Course Topics</h3>
+                                <h3>Ancient History</h3>
+                                <p>Ancient history is the study of the historical period from the earliest written
+                                    records to around the 5th century AD. Ancient history encompasses many important
+                                    civilizations, such as ancient Egypt, ancient Greece, ancient Rome, and ancient
+                                    China. The study of ancient history is essential for understanding the origins and
+                                    development of human civilization.</p>
+                                <h3>Medieval History</h3>
+                                <p>Medieval history is the study of the historical period from the 5th century to the
+                                    15th century AD. Medieval history encompasses important events in Europe, such as
+                                    the feudal system, the Crusades, the Black Death, and the Renaissance. The study of
+                                    medieval history is essential for understanding the development of European
+                                    civilization and the formation of the modern world.</p>
+                                <h3>Modern History</h3>
+                                <p>Modern history is the study of the historical period from the 15th century to the
+                                    present day. Modern history encompasses many important events, such as the Age of
+                                    Exploration, the Reformation, the Industrial Revolution, the World Wars, and the
+                                    Cold War. The study of modern history is essential for understanding the formation
+                                    and development of the modern world.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+
+                <!-- 程式設計 -->
+                <div class="column is-one-third">
+                    <div class="subject-card programming-card" data-target="programming-modal">
+                        <div class="card-content">
+                            <img src="images/6.png" alt="Programming" class="subject-image">
+                            <h3 class="card-title">Programming</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="programming-modal" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <h2 class="title is-2">Programming</h2>
+                            <div class="content">
+                                <h3 class="is-4">Course Topics</h3>
+                                <h3>Introduction to Programming</h3>
+                                <p>Introduction to Programming courses aim to teach the fundamentals of programming,
+                                    covering basic programming concepts, commonly used programming languages,
+                                    programming tools and environments, and essential programming skills. Learning
+                                    introductory programming can help you understand the basic principles of programming
+                                    and lay the foundation for learning more advanced programming knowledge.</p>
+                                <h3>Data Structures</h3>
+                                <p>Data structures are ways of storing and organizing data in computer science, designed
+                                    for efficient access and modification of data. Common data structures include
+                                    arrays, linked lists, stacks, queues, trees, and graphs. Learning data structures
+                                    can help you understand how to effectively organize and manage data, and lay the
+                                    foundation for learning algorithms and programming.</p>
+                                <h3>Algorithms</h3>
+                                <p>Algorithms are a series of steps to solve a problem, designed to effectively solve
+                                    problems. Algorithms play an important role in computer science and are widely used
+                                    in various fields, such as searching, sorting, graphics processing, and machine
+                                    learning. Learning algorithms can help you understand how to design and analyze
+                                    algorithms and improve your programming skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="content has-text-centered">
+            <p>© 2024 Open Integrated Curriculum</p>
+        </div>
+    </footer>
+
+    <!-- 漢堡選單 JavaScript -->
+    <script src="js/style.js"></script>
+    <script src="js/uikit.min.js"></script>
+</body>
+
+</html>
